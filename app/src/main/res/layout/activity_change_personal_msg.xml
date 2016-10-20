@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:hyphenate="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.hyphenate.easeui.widget.EaseTitleBar
+        android:id="@+id/easeTitleBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        hyphenate:titleBarTitle="修改个人信息"
+        hyphenate:titleBarRightImage="@drawable/commit"
+        hyphenate:titleBarLeftImage="@drawable/title_back"
+        />
+    <LinearLayout
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:background="@drawable/changmsg_background"
+        android:layout_height="0dp">
+        <view.RoundImageView
+            android:id="@+id/change_avatar"
+            android:layout_margin="5dp"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            android:src="@drawable/default_avatar"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/activity_personal_data_backgroud"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:orientation="horizontal" >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="姓名"
+                android:textColor="#000"
+                android:textSize="20sp" />
+            <EditText
+                android:id="@+id/change_name"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:textColor="#000"
+                android:layout_height="match_parent"
+                android:background="@null" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dip"
+            android:background="#FFF2F2F2" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="手机号"
+                android:textColor="#000"
+                android:textSize="20sp" />
+            <EditText
+                android:id="@+id/change_phonenum"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:textColor="#000"
+                android:layout_height="match_parent"
+                android:background="@null" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dip"
+            android:background="#FFF2F2F2" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:text="性别"
+                android:textColor="#000"
+                android:textSize="20sp" />
+            <RadioGroup
+                android:id="@+id/change_sex"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal" >
+                <RadioButton
+                    android:id="@+id/change_men"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:text="男"
+                    android:textSize="20sp" />
+                <RadioButton
+                    android:id="@+id/change_women"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:text="女"
+                    android:textSize="20sp" />
+            </RadioGroup>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dip"
+            android:background="#FFF2F2F2" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="所在学院"
+                android:textColor="#000"
+                android:textSize="20sp" />
+            <Spinner
+                android:id="@+id/change_college"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/write"
+                android:background="@null"
+                android:entries="@array/spinner_college"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

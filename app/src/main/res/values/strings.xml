@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">掌上维修移动端</string>
+    <string name="action_settings">Settings</string>
+    <string name="user_name">用户名</string>
+    <string name="password">密码</string>
+    <string name="image">图片</string>
+    <string name="all_image">所有图片</string>
+    <string name="preview">预览</string>
+    <string name="msg_no_camera">无法启用系统相机</string>
+    <string name="msg_amount_limit">已经达到最高选择数量</string>
+    <string name="done">完成</string>
+    <string name="done_with_count">完成(%1$d/%2$d)</string>
+    <string name="image_index">%1$d/%2$d</string>
+    <string name="delete">删除</string>
+    <string name="deleted_a_photo">删除了一张图片</string>
+    <string name="confirm_to_delete">确认删除？</string>
+    <string name="yes">确定</string>
+    <string name="cancel">取消</string>
+    <string name="undo">撤消</string>
+    <string name="apartment_repaire">公寓报修</string>
+    <string name="teaching_building_repaire">教学楼报修</string>
+    <string name="teaching_building_goodsrepaire">教学楼物品报修</string>
+    <string name="apartment_building_goodsrepaire">公寓物品报修</string>
+    <string name="apartment_building_netrepaire">公寓网络报修</string>
+    <string-array name="spinner_repaire_type">
+        <item></item>
+        <item>@string/apartment_repaire</item>
+        <item>@string/teaching_building_repaire</item>
+    </string-array>
+    <string-array name="spinner_college"  >
+        <item color = "@color/write">计算机工程学院</item>
+        <item>机电与车辆工程学院</item>
+        <item>信息与控制工程学院</item>
+        <item>经济管理学院</item>
+        <item>数学与信息科学学院</item>
+        <item>物理与光电工程学院</item>
+        <item>化学化工与环境工程学院</item>
+        <item>生物与农业工程学院</item>
+        <item>文学与新闻传播学院</item>
+        <item>外国语学院</item>
+        <item>法学院</item>
+        <item>历史文化与旅游学院</item>
+        <item>音乐学院</item>
+        <item>美术学院</item>
+        <item>体育学院</item>
+        <item>教师教育学院</item>
+        <item>建筑工程学院</item>
+        <item>北海国际学院</item>
+        <item>马克思主义学院</item>
+        <item>传媒学院</item>
+    </string-array>
+</resources>

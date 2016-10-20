@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@drawable/bacg"
+    android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="28dp"
+                android:layout_marginRight="28dp"
+                android:layout_marginTop="97dp"
+                android:background="@drawable/login_name"
+                >
+                <EditText
+                    android:layout_centerVertical="true"
+                    android:id="@+id/username"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="11dp"
+                    android:hint="@string/user_name"
+                    android:background="@null"
+                    android:textColor="@color/write"
+                    android:singleLine="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="28dp"
+                android:layout_marginRight="28dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/login_password"
+                android:id="@+id/rl_password"
+                >
+
+                <EditText
+                    android:layout_marginLeft="10dip"
+                    android:background="@null"
+                    android:id="@+id/password"
+                    android:textColor="@color/write"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:hint="@string/password"
+                    android:inputType="textPassword"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="28dp"
+                android:layout_marginRight="28dp"
+                android:layout_marginTop="4dp"
+                >
+                <CheckBox
+                    android:id="@+id/rememberPass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="记住密码"
+                    />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/system_login"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="28dp"
+                android:layout_marginRight="28dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/login_login"
+                android:gravity="center"
+                android:paddingBottom="7dp"
+                android:text="登陆"
+                android:textColor="@drawable/bt_text_color_sel"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/system_register"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="28dp"
+                android:layout_marginRight="28dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/login_login"
+                android:gravity="center"
+                android:paddingBottom="7dp"
+                android:text="注册"
+                android:textColor="@drawable/bt_text_color_sel"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+</LinearLayout>
